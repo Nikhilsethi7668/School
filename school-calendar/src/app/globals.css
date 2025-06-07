@@ -1,0 +1,156 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  /* color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif; */
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #f7fafc;
+  color: #1a202c;
+  scroll-behavior: smooth;
+}
+
+.social-list .list-inline-item:not(:last-child) {
+    margin-right: 1.5rem
+}
+
+.social-list a {
+    font-size: 1.4rem
+}
+
+.fa-facebook-messenger,.social-list .fa-facebook-f {
+    color: #3b5998
+}
+
+.social-list .fa-twitter {
+    color: #38a1f3
+}
+
+.social-list .fa-linkedin {
+    color: #0e76a8
+}
+
+.social-list .fa-pinterest-p {
+    color: #c8232c
+}
+
+.social-list .fa-whatsapp {
+    color: #4fce5d
+}
+
+.social-list .fa-reddit {
+    color: #ff4301
+}
+
+.social-list .fa-envelope {
+    color: #ff4301
+}
+
+
+/* 
+.footer {
+    background-image: url(https://schoolcalendar.net//public/assets/images/footer_bg.webp);
+    background-size: cover;
+    padding: 3em 0 10em;
+    position: relative
+} */
+
+.footer-logo+p {
+    font-size: .9rem;
+    font-weight: 100
+}
+
+.footer-list-container {
+    padding-top: 2.2em
+}
+
+.footer-list-heading>span {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 1em .2rem .4em;
+    border-bottom: 3px solid #fff;
+    font-size: 1.34rem
+}
+
+.footer-list {
+    padding-left: 1em
+}
+
+.footer-list>li {
+    line-height: 3.3;
+    font-size: .9rem
+}
+
+.footer-list a {
+    color: #fff;
+    font-weight: lighter
+}
+
+.footer-list-container-2 {
+    padding-left: 0
+}
+
+.footer-social-list a {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative
+}
+
+.footer-social-list a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.footer-bottom {
+    background-color: rgba(35,93,139,.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center
+}
+
+.footer-bottom a {
+    color: #fff
+}
+
+img-fluid {
+    max-width: 100%;
+    height: auto;
+}
